@@ -3,3 +3,12 @@
     align-items: center;
     justify-content: space-between;
 }
+
+@mixin text {
+   font-weight: bold;
+   text-align: center;
+}
+
+$primaryTextColor: #ffee32;
+$secondaryTextColor: white;
+$primaryBtnBg: #ff7f50;

@@ -1,40 +1,46 @@
 @import "../sass/Variables.scss";
 
-.container {
-    background-color: #2d2a32;
-    backdrop-filter: blur(20px);
+.carouselField {
+    background-image: url("https://cdn.shopify.com/s/files/1/0601/1129/0603/files/ga-banner-section-gym-a-club-3b.jpg");
+    background-repeat: no-repeat;
+    height: 1300px;
     width: 100%;
-    margin-top: 0
 }
 
-.navItems {
-  display: flex;
-  align-items: center;
+.card {
+    margin: 0 2px;
+    width: 100%;
 }
 
-.logo {
-    width: 40% ;
+.title {
+    @include text;
+    color: $primaryTextColor;
+    font-size: 10rem;
+    margin: 2rem 100px;
 }
 
-.navItemsLinks {
-    @include displayItems;
-    width: 60%;
+.description {
+    @include text;
+    font-size: 5rem;
+    color: $secondaryTextColor;
+    margin: 100px 200px;
+    padding: 100px 10px;
+    background-image: linear-gradient(to right, #553c9a8e, #ee4c2baa, #00c1cb81, #ff7f50a4, #553c9aa1);
+    backdrop-filter: blur(17px);
 }
 
-.navLinks {
-    color: #ffff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 50px;
-    letter-spacing: 10px;
-}
-
-.navLinks:last-child {
-    margin-right: 100px;
+.btnField {
+    @include displayItems();
+    justify-content: center;
 }
 
 .btn {
-    background-color: #c99843;
-    padding: 30px 100px;
-    border-radius: 10px;
+    @include text;
+    margin: 50px 0;
+    background-color: $primaryBtnBg;
+    color: $primaryTextColor;
+    font-size: 4rem;
+    border: none;
+    padding: 30px 200px;
+    border-radius: 20px;
 }

@@ -1,0 +1,61 @@
+@import "../sass/Variables.scss";
+
+.container {
+  background-color: #48cae4;
+  width: 100%;
+  margin-top: 0;
+}
+
+.navItems {
+  @include displayItems;
+}
+
+.logo {
+  width: 40%;
+}
+
+.navItemsLinks {
+  @include displayItems;
+  width: 60%;
+}
+
+.active {
+  color: $secondaryTextColor;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 10px;
+}
+
+.active:focus {
+  color: $primaryTextColor;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 4rem;
+  letter-spacing: 10px;
+}
+
+.navLinks:last-child {
+  margin-right: 100px;
+}
+
+.btn {
+  margin-right: 4rem;
+  color: $primaryTextColor;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 4rem;
+  letter-spacing: 10px;
+  padding: 50px 150px;
+  background-color: #38D2D2;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 3rem;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+}
