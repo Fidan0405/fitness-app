@@ -1,0 +1,93 @@
+@import "../sass/Variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  margin-bottom: 200px;
+  @include text;
+  font-size: 80px;
+  color: $primaryTextColor;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.cardContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px 100px;
+}
+
+.cardBody {
+  position: relative;
+  max-width: 850px;
+  height: 500px;
+  background-color: $primaryTextColor;
+  padding: 200px 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 50px 100px 50px #553c9a8e;
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
+}
+
+.cardBody:hover {
+  height: 600px;
+}
+
+
+.image {
+  position: relative;
+  width: 800px;
+  bottom: 60%;
+  left: 18px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 15px;
+  height: 600px;
+}
+
+.content {
+  position: relative;
+  bottom: 400px;
+  padding: 0 15px 20px 15px;
+  color: $secondaryTextColor;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.cardBody:hover .content {
+  margin-top: 30px;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.title {
+  @include text;
+  font-size: 70px;
+}
+
+.decsiription {
+  @include text;
+  font-size: 50px;
+}

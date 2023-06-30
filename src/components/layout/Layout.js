@@ -1,11 +1,15 @@
-import Header from "../Header/Header";
+import Home from "../Home/Home";
 import styles from "./Layout.module.scss";
+import Header from "../Header/Header";
 
 const Layout = () => {
   return (
-    <div className={styles.container}>
-      <Header/>
-    </div>
+    <>
+      <Header />
+      <div className={styles.container}>
+        <Home />
+      </div>
+    </>
   )
 }
 
