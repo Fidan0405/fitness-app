@@ -2,7 +2,7 @@ import styles from "./Header.module.scss";
 import Navbar from "./Navbar";
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-import PlayButton from "../../assets/play-button.png";
+
 
 
 const Header = () => {
@@ -51,7 +51,6 @@ const Header = () => {
                                         <p className={styles.description}>{slideImage.decsiription}</p>
                                         <div className={styles.btnField}>
                                             <button className={styles.btn}>{slideImage.btn}</button>
-                                            <img src={PlayButton} />
                                         </div>
                                     </div>
                                 </div>

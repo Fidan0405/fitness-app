@@ -1,5 +1,10 @@
 @import "../sass/Variables.scss";
 
+body{
+  box-sizing: border-box;
+  padding: 0;
+}
+
 .container {
   background-color: $primaryBgColor;
   width: 100%;
