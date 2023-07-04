@@ -5,11 +5,12 @@
 }
 
 @mixin text {
-   font-weight: bold;
-   text-align: center;
+    font-weight: bold;
+    text-align: center;
 }
 
-$primaryBgColor:#48cae4;
+$primaryBgColor: #48cae4;
 $primaryTextColor: #ffee32;
 $secondaryTextColor: white;
+$thirdColor: #553c9a8e;
 $primaryBtnBg: #ff7f50;

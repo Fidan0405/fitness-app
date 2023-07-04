@@ -1,0 +1,93 @@
+@import "../sass/Variables.scss";
+
+.container {
+    margin-top: 300px;
+    background-color: #e9ecef;
+    border-radius: 150px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    padding: 150px;
+    @include text;
+    font-size: 80px;
+    color: $primaryTextColor;
+}
+
+.div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 150px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardContainer {
+    width: 40%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 100px;
+    padding: 150px;
+    margin-top: 150px;
+    margin-left: 350px;
+    height: 550px;
+}
+
+
+.cardImage {
+    width: 350px;
+    height: 400px;
+}
+
+.image {
+    width: 100%;
+
+    & .img {
+        height: 2000px;
+    }
+}
+
+.textArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & .title {
+        @include text;
+        color: $primaryBgColor;
+        font-size: 64px;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 7px #fff,
+            0 0 7px #fff,
+            0 0 7px $primaryBgColor,
+            0 0 7px $primaryBgColor,
+            0 0 7px $primaryBgColor,
+            0 0 7px $primaryBgColor,
+            0 0 7px $primaryBgColor;
+    }
+
+    & .description {
+        color: $thirdColor;
+        font-size: 40px;
+        @include text;
+    }
+}
